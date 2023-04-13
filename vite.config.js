@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: "/node_modules/.pnpm/rollup@3.20.2",
+      external: [
+                "react-icons",
+            ],
     },
   },
 });
